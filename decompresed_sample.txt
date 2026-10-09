@@ -1,0 +1,77 @@
+Hi, this is the testing file for CompressIt.
+
+This file is written in order to evaluate the way CompressIt handles a text file and what percentage of its size CompressIt will be able to compress. As a result, we are going to analyze the size of the original file, size of the compressed file and compression ratio. Also, we need to compare the decompressed file with the original file and to see if there are any differences.
+
+CompressIt is a file compression, file management, backup and searching utility. The key concept of CompressIt is to combine several useful file operations into one application and to make a user not switching from one application to another all the time in order to do different operations.
+
+At present, the compression module is intended to handle text files. The compression method used by CompressIt is Huffman coding, which is a lossless compression. It means that when you compress and then decompress a file, you receive the initial information without any changes.
+
+For example, if the text file contains such a word as compression many times, the compression algorithm takes into account the frequent occurrence of some symbols and uses them in order to decrease the size of the file. Frequent symbols may be coded by shorter codes, while less frequent symbols – by longer codes. This can save some space.
+
+This test file contains repeated words such as compression, CompressIt, file, text, backup, search, data, program, algorithm, and testing. The repetition is intentional because repeated characters and patterns are useful when testing a compression algorithm.
+
+We are also testing different types of characters in this file.
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+0123456789
+
+Special characters:
+! @ # $ % ^ & * ( ) - _ + = { } [ ] : ; " ' < > , . ? / \ |
+
+We can also include multiple spaces, punctuation, and numbers to see how the program handles different input characters.
+
+Numbers for testing:
+1234567890
+11111111111111111111
+22222222222222222222
+123123123123123123123123
+98765432109876543210
+
+Repeated text for compression testing:
+
+CompressIt CompressIt CompressIt CompressIt CompressIt CompressIt CompressIt CompressIt CompressIt CompressIt.
+
+Compression compression compression compression compression compression compression compression compression.
+
+File file file file file file file file file file file file file file.
+
+Backup backup backup backup backup backup backup backup backup backup.
+
+Search search search search search search search search search search.
+
+Data data data data data data data data data data data data data.
+
+This section contains a lot of repeated information because the purpose of this file is to test compression. A real text document may contain repeated words, repeated characters, repeated spaces, and similar sentences. Huffman coding should be able to use the frequency of characters to represent common characters efficiently.
+
+Now we will add some longer paragraphs.
+
+CompressIt is being developed as a utility that combines several file-related operations into one program. The compression module is only one part of the complete project. Other planned modules include backup management, duplicate detection, file management, and searching through multiple text files. The purpose of the project is to make common file operations easier to access from a single application.
+
+The backup module can be used to maintain copies of important files. Instead of creating a completely new backup every time, an incremental backup system can focus on files that have changed since the previous backup. This can help reduce unnecessary storage usage.
+
+The search module is intended to make searching through multiple text files faster and more organized. Instead of manually opening every file and searching through them one by one, the program can maintain an index that helps locate words across multiple files.
+
+The compression module currently focuses on text files. It reads the input file, processes the characters, creates a Huffman tree based on character frequencies, generates codes, and uses those codes to represent the original data. The compressed data can then be decompressed to recreate the original file.
+
+The important part of this test is not only seeing whether the compressed file is smaller. We also need to make sure that decompression works correctly. If the original file and decompressed file are identical, the compression and decompression process has successfully preserved the data.
+
+Emoji test:
+😀 😀 😀 😀 😀 😭 😭 😭 😭 😭 😂 😂 😂 😂 😂 ❤️ ❤️ ❤️ ❤️ ❤️ 👍 👍 👍 👍 👍
+🚀 🚀 🚀 💻 💻 💻 🔥 🔥 🔥 🎮 🎮 🎮
+
+We are adding emojis because they contain characters that may require more than one byte in UTF-8. This is useful for testing how the program handles non-ASCII characters.
+
+Another important test is the empty line.
+
+This sentence comes after an empty line.
+
+There are also tabs and spaces in this file.
+
+End of test.
+
+CompressIt test complete.
+
+If this file can be compressed and decompressed successfully, and the decompressed output matches the original file exactly, then the compression module has passed an important basic test.
+
+GG.
